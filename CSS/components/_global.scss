@@ -1,0 +1,151 @@
+@import "./colors";
+@import "./fonts";
+@import "./other";
+
+body {
+    font-family: $body!important;
+}
+
+h1 {
+    font-size: $h1;
+    font-weight: $medium;
+    color: $dark-black;
+    font-family: $heading;
+}
+
+h2 {
+    font-size: $h2;
+    font-weight: $medium;
+    color: $dark-black;
+    font-family: $heading;
+}
+
+h3 {
+    font-size: $h3;
+    font-weight: $medium;
+    color: $dark-black;
+    font-family: $heading;
+}
+
+h4 {
+    font-size: $h4;
+    font-weight: $medium;
+    color: $dark-black;
+    font-family: $heading;
+}
+
+h5 {
+    font-size: $h5;
+    font-weight: $medium;
+    color: $dark-black;
+    font-family: $heading;
+}
+
+h6 {
+    font-size: $h6;
+    font-weight: $medium;
+    color: $dark-black;
+    font-family: $heading;
+}
+
+p {
+    font-size: $body;
+    font-weight: $regular;
+    line-height: 26px;
+    margin: 0;
+    color: $light-white;
+}
+a.link{
+    text-decoration:  none;
+    font-size: 16px;
+    font-weight: $regular;
+    font-family: $heading;
+    line-height: 26px;
+}
+
+
+.container-large{
+    max-width: 1400px;
+    margin: auto;
+}
+@media (max-width: 1400px){
+    .container-large{
+        max-width: 1320px;
+    }
+}
+@media (max-width: 1200px){
+    .container-large{
+        max-width: 1140px;
+    }
+}
+@media (max-width: 992px){
+    .container-large{
+        max-width: 960px;
+    }
+}
+@media (max-width: 768px){
+    .container-large{
+        max-width: 100%;
+    }
+}
+
+// ************************************
+//            Media Queries
+// ************************************
+@media(max-width: 1024px) {
+    h1{
+        font-size: calc($h1 - 6px);
+    }
+    h2{
+        font-size: calc($h2 - 13px);
+    }
+    h3{
+        font-size: calc($h3 - 13px);
+    }
+}
+
+@media(max-width: 992px) {
+    h1{
+        font-size: calc($h1 - 26px);
+    }
+    h2{
+        font-size: calc($h2 - 5px);
+    }
+    h3{
+        font-size: calc($h3 - 18px);
+    }
+    h4{
+        font-size: calc($h4 - 10px);
+    }
+}
+
+@media(max-width: 767px) {
+    h1{
+        font-size: calc($h1 - 36px);
+    }
+    h2{
+        font-size: calc($h2 - 22px);
+    }
+    h3{
+        font-size: calc($h3 - 20px);
+    }
+    h4{
+        font-size: calc($h4 - 10px);
+    }
+    h5{
+        font-size: calc($h5 - 6px);
+    }
+    h6{
+        font-size: calc($h6 - 2px);
+    }
+    p{
+        font-size: calc($body-text - 2px);
+    }
+    button, .btn{
+        font-size: calc($h6 - 4px);
+    }
+    a.link{
+        font-size: 16px;
+    }
+
+}

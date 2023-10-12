@@ -1,0 +1,32 @@
+@import "./colors";
+@import "./fonts";
+
+
+$transitionOne: all 0.3s ease-in-out;
+$borderOne: 1px solid $green;
+
+@keyframes pulse-animation {
+    0% {
+      box-shadow: 0 0 0 0px rgba(46, 240, 109, 0.2);
+    }
+    100% {
+      box-shadow: 0 0 0 24px rgba(46, 240, 109, 0);
+    }
+  }
+@keyframes pulse-animation-white {
+    0% {
+      box-shadow: 0 0 0 0px rgba(255, 255, 255, 0.2);
+    }
+    100% {
+      box-shadow: 0 0 0 24px rgba(255, 255, 255, 0);
+    }
+  }
+
+@keyframes fade-in{
+  0% {
+    opacity: 0;
+}
+100% {
+    opacity: 1;
+}
+}
